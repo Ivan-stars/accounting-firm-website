@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Raymond C W Tam and Co.</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Font imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&family=Noto+Sans+HK:wght@300;400;500&family=Montserrat:wght@600&family=Lato:wght@400&display=swap" rel="stylesheet">
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header id="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="会计服务公司标志">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="nav_home">首页</a></li>
+                    <li class="active has-submenu">
+                        <a href="about.html" data-i18n="nav_about">关于我们</a>
+                        <ul class="submenu">
+                            <li><a href="#company" data-i18n="nav_company_intro">公司简介</a></li>
+                            <li><a href="#team" data-i18n="nav_team">团队介绍</a></li>
+                            <li><a href="#certificates" data-i18n="nav_certificates">资质证书</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="services.html" data-i18n="nav_services">专业服务</a>
+                        <ul class="submenu">
+                            <li><a href="services.html#audit" data-i18n="nav_audit">审计鉴证</a></li>
+                            <li><a href="services.html#tax" data-i18n="nav_tax">税务筹划</a></li>
+                            <li><a href="services.html#consulting" data-i18n="nav_consulting">企业咨询</a></li>
+                            <li><a href="services.html#risk" data-i18n="nav_risk">风险管理</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="contact.html" data-i18n="nav_contact">联络我们</a>
+                        <ul class="submenu">
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <div class="current-lang">
+                    <img src="assets/images/flag-en.png" alt="English" class="lang-flag">
+                    <span data-i18n="lang_en">English</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <ul class="lang-dropdown">
+                    <li data-lang="en"><img src="assets/images/flag-en.png" alt="English" class="lang-flag"><span data-i18n="lang_en">English</span></li>
+                    <li data-lang="zh-HK"><img src="assets/images/flag-hk.png" alt="繁體中文" class="lang-flag"><span data-i18n="lang_zh_hk">繁體中文</span></li>
+                    <li data-lang="zh-CN"><img src="assets/images/flag-cn.png" alt="简体中文" class="lang-flag"><span data-i18n="lang_zh_cn">简体中文</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 data-i18n="nav_about">关于我们</h1>
+            <ul class="breadcrumb">
+                <li><a href="index.html" data-i18n="nav_home">首页</a></li>
+                <li data-i18n="nav_about">关于我们</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Company Introduction -->
+    <section id="company" class="company-intro">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="nav_company_intro">公司简介</h2>
+                <div class="separator"></div>
+            </div>
+            
+            <div class="intro-content">
+                <div class="intro-image">
+                    <img src="assets/images/office-building.jpg" alt="公司大楼">
+                </div>
+                <div class="intro-text">
+                    <h3 data-i18n="about_our_story">我们的故事</h3>
+                    <p data-i18n="about_story_content">创立于1993年，我们是香港一家领先的专业会计师事务所，专注于为本地及国际客户提供高质量的会计、审计、税务及商业咨询服务。</p>
+                    
+                    <h3 data-i18n="about_our_mission">我们的使命</h3>
+                    <p data-i18n="about_mission_content">致力于通过专业知识与创新服务，协助客户解决复杂财务问题，实现业务目标与持续增长。</p>
+                    
+                    <h3 data-i18n="about_core_values">核心价值观</h3>
+                    <ul class="values-list">
+                        <li><strong data-i18n="about_value_integrity">诚信</strong> - <span data-i18n="about_value_integrity_desc">坚持最高道德标准，保持专业操守</span></li>
+                        <li><strong data-i18n="about_value_professional">专业</strong> - <span data-i18n="about_value_professional_desc">不断提升专业知识，追求卓越服务质量</span></li>
+                        <li><strong data-i18n="about_value_innovation">创新</strong> - <span data-i18n="about_value_innovation_desc">采用先进技术与方法，提供创新解决方案</span></li>
+                        <li><strong data-i18n="about_value_client">客户至上</strong> - <span data-i18n="about_value_client_desc">深入了解客户需求，提供定制化服务</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="milestone-timeline">
+                <h3 data-i18n="about_milestones">发展历程</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>1993</h4>
+                            <p data-i18n="about_milestone_1">公司创立，开始提供基础会计服务</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2000</h4>
+                            <p data-i18n="about_milestone_2">业务扩展到审计与税务服务领域</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2008</h4>
+                            <p data-i18n="about_milestone_3">成立国际业务部门，开始服务跨国企业</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2015</h4>
+                            <p data-i18n="about_milestone_4">引入数字化转型服务，帮助客户实现财务数字化</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2023</h4>
+                            <p data-i18n="about_milestone_5">成立ESG咨询团队，助力企业可持续发展</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Introduction -->
+    <section id="team" class="team-intro">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="nav_team">团队介绍</h2>
+                <div class="separator"></div>
+                <p class="section-subtitle" data-i18n="about_team_subtitle">我们拥有一支经验丰富、专业素养高的精英团队</p>
+            </div>
+            
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/images/team-1.jpg" alt="张伟明先生">
+                    </div>
+                    <div class="member-info">
+                        <h3>张伟明先生</h3>
+                        <p class="member-position">创始合伙人 / 首席执行官</p>
+                        <p class="member-bio">拥有30年会计与审计经验，曾任职于四大会计师事务所，香港注册会计师协会会员。</p>
+                        <div class="member-social">
+                            <a href="#" target="_blank"><img src="assets/images/icon-linkedin.svg" alt="LinkedIn"></a>
+                            <a href="#" target="_blank"><img src="assets/images/icon-email.svg" alt="Email"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/images/team-2.jpg" alt="陈美玲女士">
+                    </div>
+                    <div class="member-info">
+                        <h3>陈美玲女士</h3>
+                        <p class="member-position">高级合伙人 / 税务总监</p>
+                        <p class="member-bio">税务规划专家，20年跨境税务经验，精通中港税务法规，ACCA资深会员。</p>
+                        <div class="member-social">
+                            <a href="#" target="_blank"><img src="assets/images/icon-linkedin.svg" alt="LinkedIn"></a>
+                            <a href="#" target="_blank"><img src="assets/images/icon-email.svg" alt="Email"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/images/team-3.jpg" alt="李志强先生">
+                    </div>
+                    <div class="member-info">
+                        <h3>李志强先生</h3>
+                        <p class="member-position">审计合伙人</p>
+                        <p class="member-bio">专注于上市公司审计与合规服务，15年行业经验，香港及美国注册会计师。</p>
+                        <div class="member-social">
+                            <a href="#" target="_blank"><img src="assets/images/icon-linkedin.svg" alt="LinkedIn"></a>
+                            <a href="#" target="_blank"><img src="assets/images/icon-email.svg" alt="Email"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/images/team-4.jpg" alt="王晓华女士">
+                    </div>
+                    <div class="member-info">
+                        <h3>王晓华女士</h3>
+                        <p class="member-position">咨询服务总监</p>
+                        <p class="member-bio">企业战略与风险管理专家，曾服务多家跨国公司，MBA学位持有者。</p>
+                        <div class="member-social">
+                            <a href="#" target="_blank"><img src="assets/images/icon-linkedin.svg" alt="LinkedIn"></a>
+                            <a href="#" target="_blank"><img src="assets/images/icon-email.svg" alt="Email"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-stats">
+                <div class="stat-item">
+                    <div class="stat-number">45+</div>
+                    <p>专业人员</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <p>合伙人</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">8</div>
+                    <p>专业领域</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">20+</div>
+                    <p>行业覆盖</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates & Qualifications -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">资质证书</h2>
+                <div class="separator"></div>
+                <p class="section-subtitle">我们拥有行业领先的专业资质与认证</p>
+            </div>
+            
+            <div class="certificates-grid">
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <img src="assets/images/cert-hkicpa-lg.png" alt="HKICPA认证">
+                    </div>
+                    <h3>香港会计师公会会员</h3>
+                    <p>我们的所有合伙人均为香港会计师公会(HKICPA)的正式会员，确保服务符合香港最高会计标准。</p>
+                </div>
+                
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <img src="assets/images/cert-acca-lg.png" alt="ACCA认证">
+                    </div>
+                    <h3>特许公认会计师公会</h3>
+                    <p>ACCA全球认可的专业资质，我们的团队成员持有此国际化会计师资格证书。</p>
+                </div>
+                
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <img src="assets/images/cert-cpa-lg.png" alt="CPA认证">
+                    </div>
+                    <h3>美国注册会计师</h3>
+                    <p>专注于国际业务的团队成员同时持有美国注册会计师(CPA)资格，能够处理美国相关业务。</p>
+                </div>
+                
+                <div class="certificate-item">
+                    <div class="certificate-icon">
+                        <img src="assets/images/cert-iso-lg.png" alt="ISO认证">
+                    </div>
+                    <h3>ISO 9001:2015认证</h3>
+                    <p>我们的质量管理体系通过国际标准化组织认证，确保服务流程的标准化与高质量。</p>
+                </div>
+            </div>
+            
+            <div class="membership-logos">
+                <h3>行业协会会员资格</h3>
+                <div class="logos-container">
+                    <div class="logo-item">
+                        <img src="assets/images/member-1.png" alt="协会标志">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/images/member-2.png" alt="协会标志">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/images/member-3.png" alt="协会标志">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/images/member-4.png" alt="协会标志">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>想了解更多关于我们的信息？</h2>
+                <p>欢迎联系我们安排面谈或详细咨询</p>
+                <a href="contact.html" class="btn btn-primary">联系我们</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/logo-white.png" alt="Raymond C W Tam and Co.标志" class="footer-logo">
+                    <p>提供卓越会计与税务服务30年，为企业与个人提供全面财务解决方案。</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><img src="assets/images/icon-linkedin.svg" alt="LinkedIn"></a>
+                        <a href="#" target="_blank"><img src="assets/images/icon-wechat.svg" alt="WeChat"></a>
+                        <a href="#" target="_blank"><img src="assets/images/icon-whatsapp.svg" alt="WhatsApp"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="services.html">专业服务</a></li>
+                        <li><a href="contact.html">联络我们</a></li>
+                        <li><a href="privacy.html">隐私政策</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <address>
+                        <p><img src="assets/images/icon-location.svg" alt="地址"> Unit 658, 6/F., Building 19W, No. 19, Science Park, Hong Kong</p>
+                        <p><img src="assets/images/icon-phone.svg" alt="电话"> +852 98662300</p>
+                        <p><img src="assets/images/icon-email.svg" alt="邮箱"> raytam88@hotmail.com</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Raymond C W Tam and Co. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

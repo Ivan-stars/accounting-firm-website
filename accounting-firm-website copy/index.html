@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专业会计服务 | 信誉卓著</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Font imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&family=Montserrat:wght@600&family=Lato:wght@400&display=swap" rel="stylesheet">
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Swiper.js for carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header id="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="会计服务公司标志">
+                </a>
+            </div>
+            <div class="language-switcher">
+                <div class="current-lang">
+                    <img src="assets/images/hk-flag.png" alt="香港">
+                    <span>繁體中文</span>
+                </div>
+                <ul class="lang-dropdown">
+                    <li><a href="/zh-CN/"><img src="assets/images/cn-flag.png" alt="中国"> 简体中文</a></li>
+                    <li><a href="/en/"><img src="assets/images/en-flag.png" alt="English"> English</a></li>
+                </ul>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li class="has-submenu">
+                        <a href="about.html">关于我们</a>
+                        <ul class="submenu">
+                            <li><a href="about.html#company">公司简介</a></li>
+                            <li><a href="about.html#team">团队介绍</a></li>
+                            <li><a href="about.html#certificates">资质证书</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="services.html">专业服务</a>
+                        <ul class="submenu">
+                            <li><a href="services.html#audit">审计鉴证</a></li>
+                            <li><a href="services.html#tax">税务筹划</a></li>
+                            <li><a href="services.html#consulting">企业咨询</a></li>
+                            <li><a href="services.html#risk">风险管理</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="contact.html">联络我们</a>
+                        <ul class="submenu">
+                            <li><a href="contact.html#form">在线表单</a></li>
+                            <li><a href="contact.html#map">办公室地图</a></li>
+                            <li><a href="contact.html#emergency">紧急联络通道</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Carousel Section -->
+    <section class="hero-carousel">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide slide-1">
+                    <div class="slide-content">
+                        <h1>专业会计解决方案</h1>
+                        <p>为您的企业提供全面、精准的财务支持</p>
+                        <a href="services.html" class="btn btn-primary">了解服务</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide slide-2">
+                    <div class="slide-content">
+                        <h1>精准税务规划</h1>
+                        <p>量身定制的税务策略，合法合理优化税负</p>
+                        <a href="services.html#tax" class="btn btn-primary">咨询专家</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide slide-3">
+                    <div class="slide-content">
+                        <h1>30年本地经验</h1>
+                        <p>扎根本土，深度了解本地商业环境与法规</p>
+                        <a href="about.html" class="btn btn-primary">关于我们</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="core-services">
+        <div class="container">
+            <h2 class="section-title">核心服务</h2>
+            <p class="section-subtitle">为您提供全方位的专业会计及商业咨询服务</p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg class="icon-audit" viewBox="0 0 24 24">
+                            <path d="M3 20V4h18v16H3zm2-2h14V6H5v12zm2-2h10v-2H7v2zm0-4h10v-2H7v2z"/>
+                        </svg>
+                    </div>
+                    <h3>审计鉴证</h3>
+                    <p>专业审计报告，确保财务透明与合规</p>
+                    <a href="services.html#audit" class="read-more">了解更多</a>
+                    <div class="service-details">
+                        <ul>
+                            <li>法定审计</li>
+                            <li>内部审计</li>
+                            <li>特殊目的审计</li>
+                            <li>IPO准备审计</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg class="icon-tax" viewBox="0 0 24 24">
+                            <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm-3 3h2v6h-2V7zm4 0h2v6h-2V7z"/>
+                        </svg>
+                    </div>
+                    <h3>税务筹划</h3>
+                    <p>优化税务结构，合法最大化税收利益</p>
+                    <a href="services.html#tax" class="read-more">了解更多</a>
+                    <div class="service-details">
+                        <ul>
+                            <li>企业所得税筹划</li>
+                            <li>跨境税务规划</li>
+                            <li>个人税务顾问</li>
+                            <li>税务合规服务</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg class="icon-consulting" viewBox="0 0 24 24">
+                            <path d="M21 6h-4V3h-2v3h-6V3H7v3H3v14h18V6zm-2 12H5V8h14v10zm-8-2h2v-2h-2v2zm-4 0h2v-2H7v2zm8 0h2v-2h-2v2z"/>
+                        </svg>
+                    </div>
+                    <h3>企业咨询</h3>
+                    <p>战略性商业建议，助力企业稳健发展</p>
+                    <a href="services.html#consulting" class="read-more">了解更多</a>
+                    <div class="service-details">
+                        <ul>
+                            <li>企业架构规划</li>
+                            <li>商业计划书撰写</li>
+                            <li>财务管理优化</li>
+                            <li>业务流程重组</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-button">
+                <a href="services.html" class="btn btn-secondary">查看全部服务</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Endorsement Section -->
+    <section class="trust-endorsement">
+        <div class="container">
+            <h2 class="section-title">值得信赖的专业团队</h2>
+            
+            <!-- Achievement Counters -->
+            <div class="counter-container">
+                <div class="counter-item">
+                    <div class="counter" data-count="1500">0</div>
+                    <p>服务企业数</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter" data-count="30">0</div>
+                    <p>专业经验(年)</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter" data-count="45">0</div>
+                    <p>专业团队人数</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter" data-count="98">0</div>
+                    <p>客户满意度(%)</p>
+                </div>
+            </div>
+            
+            <!-- Professional Certifications -->
+            <div class="certifications">
+                <div class="cert-item">
+                    <img src="assets/images/cert-cpa.png" alt="CPA认证">
+                </div>
+                <div class="cert-item">
+                    <img src="assets/images/cert-acca.png" alt="ACCA认证">
+                </div>
+                <div class="cert-item">
+                    <img src="assets/images/cert-hkicpa.png" alt="HKICPA认证">
+                </div>
+                <div class="cert-item">
+                    <img src="assets/images/cert-iso.png" alt="ISO认证">
+                </div>
+            </div>
+            
+            <!-- Client Logo Carousel -->
+            <div class="client-carousel">
+                <div class="client-logos">
+                    <div class="logo-item"><img src="assets/images/client-1.png" alt="客户标志"></div>
+                    <div class="logo-item"><img src="assets/images/client-2.png" alt="客户标志"></div>
+                    <div class="logo-item"><img src="assets/images/client-3.png" alt="客户标志"></div>
+                    <div class="logo-item"><img src="assets/images/client-4.png" alt="客户标志"></div>
+                    <div class="logo-item"><img src="assets/images/client-5.png" alt="客户标志"></div>
+                    <div class="logo-item"><img src="assets/images/client-6.png" alt="客户标志"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>需要专业财务建议？</h2>
+                <p>联系我们的顾问团队，获取量身定制的专业解决方案</p>
+                <a href="contact.html" class="btn btn-primary">立即咨询</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/logo-white.png" alt="会计服务公司标志" class="footer-logo">
+                    <p>提供卓越会计与税务服务30年，为企业与个人提供全面财务解决方案。</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><img src="assets/images/icon-linkedin.svg" alt="LinkedIn"></a>
+                        <a href="#" target="_blank"><img src="assets/images/icon-wechat.svg" alt="WeChat"></a>
+                        <a href="#" target="_blank"><img src="assets/images/icon-whatsapp.svg" alt="WhatsApp"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="services.html">专业服务</a></li>
+                        <li><a href="contact.html">联络我们</a></li>
+                        <li><a href="privacy.html">隐私政策</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <address>
+                        <p><img src="assets/images/icon-location.svg" alt="地址"> 香港中环金融街88号国际金融中心32楼3201室</p>
+                        <p><img src="assets/images/icon-phone.svg" alt="电话"> +852 2345 6789</p>
+                        <p><img src="assets/images/icon-email.svg" alt="邮箱"> info@accountingfirm.hk</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 专业会计服务有限公司. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
