@@ -167,66 +167,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Counter Animation
-    const counters = document.querySelectorAll('.counter');
-    
-    function animateCounter() {
-        counters.forEach(counter => {
-            const target = parseInt(counter.getAttribute('data-count'));
-            const count = parseInt(counter.innerText);
-            const increment = Math.ceil(target / 50);
-            
-            if (count < target) {
-                counter.innerText = count + increment;
-                setTimeout(animateCounter, 40);
-            } else {
-                counter.innerText = target;
-            }
-        });
-    }
-    
-    // Start counter animation when in viewport
-    const counterSection = document.querySelector('.counter-container');
-    
-    if (counterSection) {
-        const observer = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting) {
-                animateCounter();
-                observer.unobserve(counterSection);
-            }
-        }, { threshold: 0.5 });
-        
-        observer.observe(counterSection);
-    }
-    
-    // Client Logo Carousel (Auto Scroll)
-    const logoContainer = document.querySelector('.client-logos');
-    
-    if (logoContainer) {
-        // Clone logos for infinite scroll effect
-        const logos = logoContainer.querySelectorAll('.logo-item');
-        logos.forEach(logo => {
-            const clone = logo.cloneNode(true);
-            logoContainer.appendChild(clone);
-        });
-        
-        // Start the automatic scroll
-        let scrollPos = 0;
-        const scrollSpeed = 1;
-        const containerWidth = logoContainer.scrollWidth / 2;
-        
-        function autoScroll() {
-            scrollPos += scrollSpeed;
-            if (scrollPos >= containerWidth) {
-                scrollPos = 0;
-            }
-            logoContainer.style.transform = `translateX(-${scrollPos}px)`;
-            requestAnimationFrame(autoScroll);
-        }
-        
-        autoScroll();
-    }
-    
     // Service Tabs (for services.html)
     const tabLinks = document.querySelectorAll('.tab-link');
     
