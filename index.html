@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专业会计服务 | Raymond C W Tam and Co.</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Font imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&family=Noto+Sans+HK:wght@300;400;500&family=Montserrat:wght@600&family=Lato:wght@400&display=swap" rel="stylesheet">
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Swiper.js for carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header id="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Raymond C W Tam and Co.标志">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li class="active"><a href="index.html" data-i18n="nav_home">首页</a></li>
+                    <li class="has-submenu">
+                        <a href="about.html" data-i18n="nav_about">关于我们</a>
+                        <ul class="submenu">
+                            <li><a href="about.html#company" data-i18n="nav_company_intro">公司简介</a></li>
+                            <li><a href="about.html#team" data-i18n="nav_team">团队介绍</a></li>
+                            <li><a href="about.html#certificates" data-i18n="nav_certificates">资质证书</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="services.html" data-i18n="nav_services">专业服务</a>
+                        <ul class="submenu">
+                            <li><a href="services.html#audit" data-i18n="nav_audit">审计鉴证</a></li>
+                            <li><a href="services.html#tax" data-i18n="nav_tax">税务筹划</a></li>
+                            <li><a href="services.html#consulting" data-i18n="nav_consulting">企业咨询</a></li>
+                            <li><a href="services.html#risk" data-i18n="nav_risk">风险管理</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="contact.html" data-i18n="nav_contact">联络我们</a>
+                        <ul class="submenu">
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <div class="current-lang">
+                    <img src="assets/images/flag-en.svg" alt="English" class="lang-flag">
+                    <span data-i18n="lang_en">English</span>
+                </div>
+                <ul class="lang-dropdown">
+                    <li data-lang="en"><img src="assets/images/flag-en.svg" alt="English" class="lang-flag"><span data-i18n="lang_en">English</span></li>
+                    <li data-lang="zh-HK"><img src="assets/images/flag-hk.svg" alt="繁體中文" class="lang-flag"><span data-i18n="lang_zh_hk">繁體中文</span></li>
+                    <li data-lang="zh-CN"><img src="assets/images/flag-cn.svg" alt="简体中文" class="lang-flag"><span data-i18n="lang_zh_cn">简体中文</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Carousel Section -->
+    <section class="hero-carousel">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide slide-1">
+                    <div class="slide-content">
+                        <h1 data-i18n="slide1_title">专业会计解决方案</h1>
+                        <p data-i18n="slide1_desc">为您的企业提供全面、精准的财务支持</p>
+                        <a href="services.html" class="btn btn-primary" data-i18n="slide1_btn">了解服务</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide slide-2">
+                    <div class="slide-content">
+                        <h1 data-i18n="slide2_title">精准税务规划</h1>
+                        <p data-i18n="slide2_desc">量身定制的税务策略，合法合理优化税负</p>
+                        <a href="services.html#tax" class="btn btn-primary" data-i18n="slide2_btn">咨询专家</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide slide-3">
+                    <div class="slide-content">
+                        <h1 data-i18n="slide3_title">30年本地经验</h1>
+                        <p data-i18n="slide3_desc">扎根本土，深度了解本地商业环境与法规</p>
+                        <a href="about.html" class="btn btn-primary" data-i18n="slide3_btn">关于我们</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="core-services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="core_services">核心服务</h2>
+            <p class="section-subtitle" data-i18n="core_services_subtitle">为您提供全方位的专业会计及商业咨询服务</p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg class="icon-audit" viewBox="0 0 24 24">
+                            <path d="M3 20V4h18v16H3zm2-2h14V6H5v12zm2-2h10v-2H7v2zm0-4h10v-2H7v2z"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="service_audit">审计鉴证</h3>
+                    <p data-i18n="service_audit_desc">专业审计报告，确保财务透明与合规</p>
+                    <a href="services.html#audit" class="read-more" data-i18n="learn_more">了解更多</a>
+                    <div class="service-details">
+                        <ul>
+                            <li data-i18n="service_audit_1">法定审计</li>
+                            <li data-i18n="service_audit_2">内部审计</li>
+                            <li data-i18n="service_audit_3">特殊目的审计</li>
+                            <li data-i18n="service_audit_4">IPO准备审计</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg class="icon-tax" viewBox="0 0 24 24">
+                            <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm-3 3h2v6h-2V7zm4 0h2v6h-2V7z"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="service_tax">税务筹划</h3>
+                    <p data-i18n="service_tax_desc">优化税务结构，合法最大化税收利益</p>
+                    <a href="services.html#tax" class="read-more" data-i18n="learn_more">了解更多</a>
+                    <div class="service-details">
+                        <ul>
+                            <li data-i18n="service_tax_1">企业所得税筹划</li>
+                            <li data-i18n="service_tax_2">跨境税务规划</li>
+                            <li data-i18n="service_tax_3">个人税务顾问</li>
+                            <li data-i18n="service_tax_4">税务合规服务</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg class="icon-consulting" viewBox="0 0 24 24">
+                            <path d="M21 6h-4V3h-2v3h-6V3H7v3H3v14h18V6zm-2 12H5V8h14v10zm-8-2h2v-2h-2v2zm-4 0h2v-2H7v2zm8 0h2v-2h-2v2z"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="service_consulting">企业咨询</h3>
+                    <p data-i18n="service_consulting_desc">战略性商业建议，助力企业稳健发展</p>
+                    <a href="services.html#consulting" class="read-more" data-i18n="learn_more">了解更多</a>
+                    <div class="service-details">
+                        <ul>
+                            <li data-i18n="service_consulting_1">企业架构规划</li>
+                            <li data-i18n="service_consulting_2">商业计划书撰写</li>
+                            <li data-i18n="service_consulting_3">财务管理优化</li>
+                            <li data-i18n="service_consulting_4">业务流程重组</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-button">
+                <a href="services.html" class="btn btn-secondary" data-i18n="view_all_services">查看全部服务</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-i18n="contact_cta_title">需要专业财务建议？</h2>
+                <p data-i18n="contact_cta_desc">联系我们的顾问团队，获取量身定制的专业解决方案</p>
+                <a href="contact.html" class="btn btn-primary" data-i18n="contact_cta_btn">立即咨询</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/logo-white.png" alt="Raymond C W Tam and Co.标志" class="footer-logo">
+                    <p data-i18n="footer_desc">提供卓越会计与税务服务30年，为企业与个人提供全面财务解决方案。</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><img src="assets/images/icon-linkedin.svg" alt="LinkedIn"></a>
+                        <a href="#" target="_blank"><img src="assets/images/icon-wechat.svg" alt="WeChat"></a>
+                        <a href="#" target="_blank"><img src="assets/images/icon-whatsapp.svg" alt="WhatsApp"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer_links">快速链接</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">首页</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">关于我们</a></li>
+                        <li><a href="services.html" data-i18n="nav_services">专业服务</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">联络我们</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer_contact">联系方式</h4>
+                    <address>
+                        <p><img src="assets/images/icon-location.svg" alt="地址"> Unit 658, 6/F., Building 19W, No. 19, Science Park, Hong Kong</p>
+                        <p><img src="assets/images/icon-phone.svg" alt="电话"> +852 98662300</p>
+                        <p><img src="assets/images/icon-email.svg" alt="邮箱"> raytam88@hotmail.com</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="copyright">&copy; 2023 Raymond C W Tam and Co. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Raymond C W Tam and Co.</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Font imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&family=Noto+Sans+HK:wght@300;400;500&family=Montserrat:wght@600&family=Lato:wght@400&display=swap" rel="stylesheet">
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header id="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="会计服务公司标志">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="nav_home">首页</a></li>
+                    <li class="has-submenu">
+                        <a href="about.html" data-i18n="nav_about">关于我们</a>
+                        <ul class="submenu">
+                            <li><a href="about.html#company" data-i18n="nav_company_intro">公司简介</a></li>
+                            <li><a href="about.html#team" data-i18n="nav_team">团队介绍</a></li>
+                            <li><a href="about.html#certificates" data-i18n="nav_certificates">资质证书</a></li>
+                        </ul>
+                    </li>
+                    <li class="active has-submenu">
+                        <a href="services.html" data-i18n="nav_services">专业服务</a>
+                        <ul class="submenu">
+                            <li><a href="#audit" data-i18n="nav_audit">审计鉴证</a></li>
+                            <li><a href="#tax" data-i18n="nav_tax">税务筹划</a></li>
+                            <li><a href="#consulting" data-i18n="nav_consulting">企业咨询</a></li>
+                            <li><a href="#risk" data-i18n="nav_risk">风险管理</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="contact.html" data-i18n="nav_contact">联络我们</a>
+                        <ul class="submenu">
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <div class="current-lang">
+                    <img src="assets/images/flag-en.svg" alt="English" class="lang-flag">
+                    <span data-i18n="lang_en">English</span>
+                </div>
+                <ul class="lang-dropdown">
+                    <li data-lang="en"><img src="assets/images/flag-en.svg" alt="English" class="lang-flag"><span data-i18n="lang_en">English</span></li>
+                    <li data-lang="zh-HK"><img src="assets/images/flag-hk.svg" alt="繁體中文" class="lang-flag"><span data-i18n="lang_zh_hk">繁體中文</span></li>
+                    <li data-lang="zh-CN"><img src="assets/images/flag-cn.svg" alt="简体中文" class="lang-flag"><span data-i18n="lang_zh_cn">简体中文</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 data-i18n="nav_services">专业服务</h1>
+            <ul class="breadcrumb">
+                <li><a href="index.html" data-i18n="nav_home">首页</a></li>
+                <li data-i18n="nav_services">专业服务</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="services_range">服务范围</h2>
+                <div class="separator"></div>
+            </div>
+            
+            <div class="service-circles">
+                <div class="service-circle">
+                    <a href="#audit" class="circle-link">
+                        <div class="circle-icon">
+                            <svg class="icon-audit" viewBox="0 0 24 24">
+                                <path d="M3 20V4h18v16H3zm2-2h14V6H5v12zm2-2h10v-2H7v2zm0-4h10v-2H7v2z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="nav_audit">审计鉴证</h3>
+                    </a>
+                </div>
+                
+                <div class="service-circle">
+                    <a href="#tax" class="circle-link">
+                        <div class="circle-icon">
+                            <svg class="icon-tax" viewBox="0 0 24 24">
+                                <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm-3 3h2v6h-2V7zm4 0h2v6h-2V7z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="nav_tax">税务筹划</h3>
+                    </a>
+                </div>
+                
+                <div class="service-circle">
+                    <a href="#consulting" class="circle-link">
+                        <div class="circle-icon">
+                            <svg class="icon-consulting" viewBox="0 0 24 24">
+                                <path d="M21 6h-4V3h-2v3h-6V3H7v3H3v14h18V6zm-2 12H5V8h14v10zm-8-2h2v-2h-2v2zm-4 0h2v-2H7v2zm8 0h2v-2h-2v2z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="nav_consulting">企业咨询</h3>
+                    </a>
+                </div>
+                
+                <div class="service-circle">
+                    <a href="#risk" class="circle-link">
+                        <div class="circle-icon">
+                            <svg class="icon-risk" viewBox="0 0 24 24">
+                                <path d="M12 2L1 21h22L12 2zm0 4l7.53 13H4.47L12 6zm-1 4v4h2v-4h-2zm0 6v2h2v-2h-2z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="nav_risk">风险管理</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Audit & Assurance Services -->
+    <section id="audit" class="service-section">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon">
+                    <svg class="icon-audit-lg" viewBox="0 0 24 24">
+                        <path d="M3 20V4h18v16H3zm2-2h14V6H5v12zm2-2h10v-2H7v2zm0-4h10v-2H7v2z"/>
+                    </svg>
+                </div>
+                <h2>审计鉴证</h2>
+                <p class="service-intro">作为专业的审计鉴证服务提供者，我们致力于帮助企业提升财务信息的透明度和可信度。在香港，审计鉴证不仅是法律的要求，更是企业赢得投资者信任、稳健发展的关键。我们严格遵循香港会计师公会（HKICPA）制定的《香港审计及鉴证准则》，确保每一份审计报告都符合国际标准，体现最高的独立性和专业水准。<br><br>
+                    无论是法定财务审计，还是内部控制审核、财务预测鉴证等多样化服务，我们都以严谨细致的态度，获取充分的审计证据，帮助客户准确反映财务状况，满足监管和市场的多重需求。我们的团队深谙香港公司条例及相关法规，确保审计流程合规高效，助力企业稳健运营。</p>
+            </div>
+            
+            <div class="service-content">
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>法定审计</h3>
+                        <p>我们的法定审计服务严格遵守香港会计师公会（HKICPA）制定的《香港审计及鉴证准则》，结合国际财务报告标准，保障审计质量与独立性。通过系统的审计流程，包括审计计划制定、内部控制评估、实质性测试及审计报告出具，我们帮助客户准确反映财务状况，满足监管和税务申报要求。<br><br>
+此外，我们熟悉香港公司条例中关于审计时间节点的规定，确保审计工作按期完成，避免合规风险。无论是初创企业还是成熟公司，我们都提供量身定制的审计方案，助力企业提升财务透明度，增强投资者和合作伙伴信心。</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>内部审计</h3>
+                        <p>我们的内部审计团队凭借对香港监管环境的深入了解和丰富的行业经验，为企业提供全面的内控评估与风险管理服务。我们采用国际内部审计师协会(IIA)标准结合香港特定监管要求，设计符合企业规模和行业特点的内部审计方案。<br><br>
+                        
+我们不仅关注财务风险，更全面评估运营、合规、信息技术和战略风险，帮助企业构建健全的风险防范体系。通过系统性的内控测试、流程审查和风险评估，我们能够及时识别控制缺陷，并提供切实可行的改进建议，提升企业整体治理水平。作为独立的第三方，我们的内部审计服务能够为董事会和管理层提供客观的风险保证，助力企业实现长期可持续发展。</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>特殊目的审计</h3>
+                        <p>在香港复杂多变的商业环境中，企业在并购、重组、融资等关键交易环节往往需要特殊目的审计提供专业支持。我们的特殊目的审计服务贯彻"量体裁衣"的理念，根据不同业务场景和客户需求，设计个性化的审计方案。<br><br>
+                        
+我们的专业团队具备丰富的行业知识和交易经验，能够为银行贷款、政府补贴申请、尽职调查等特定目的提供精准、可靠的审计报告。我们严格遵循香港会计师公会相关准则，确保审计质量的同时，充分考虑时效性要求，以最快速度完成审计工作。通过我们的专业服务，客户能够在重要商业决策中获得可靠的财务依据，降低交易风险，把握市场机遇。</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>IPO准备审计</h3>
+                        <p>作为香港国际金融中心的核心优势，资本市场为企业提供了宝贵的融资机会。我们的IPO准备审计团队拥有丰富的上市经验，熟悉香港联交所(HKEX)的上市规则和监管要求，能够为拟上市企业提供一站式的审计与咨询服务。<br><br>
+                        
+我们的IPO审计不仅关注历史财务信息的准确性，更注重上市后持续合规的能力建设。从前期财务尽职调查、内控体系评估到上市申请文件的财务信息审核，我们提供全流程的专业支持，协助企业顺利通过保荐人、交易所及监管机构的各项审查。我们与香港资本市场各参与方保持密切合作，能够及时把握监管动态和审查重点，帮助客户有效应对上市过程中的财务挑战，增强投资者信心，实现成功上市。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tax Planning Services -->
+    <section id="tax" class="service-section">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon">
+                    <svg class="icon-tax-lg" viewBox="0 0 24 24">
+                        <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm-3 3h2v6h-2V7zm4 0h2v6h-2V7z"/>
+                    </svg>
+                </div>
+                <h2>税务筹划</h2>
+                <p class="service-intro">作为扎根香港数十年的税务专家，我们深谙香港特区独特的税制优势及国际税务规则，为企业和高净值人士量身定制合法高效的税务方案。香港作为国际金融中心和"一带一路"重要节点，拥有低税率、简单税制和广泛的税收协定网络，为跨境税务筹划提供了理想平台。<br><br>
+                
+我们的团队由资深香港注册税务师领衔，专注于企业所得税规划、跨境税务安排、个人税务优化及税务合规服务，确保客户既能充分利用香港税收优惠，又能符合BEPS等国际税收新规则。我们不仅关注当前税负优化，更注重构建长期可持续的税务架构，助力客户在瞬息万变的国际税务环境中保持竞争优势。</p>
+            </div>
+            
+            <div class="service-content">
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>企业所得税筹划</h3>
+                        <p>我们的企业所得税筹划服务基于对香港税法及国际税收规则的精准把握，为客户设计最优税务架构。香港作为低税率司法管辖区，具有显著的税务优势，我们协助企业充分利用香港《税务条例》中的各项扣减和免税优惠，合理安排收入确认和费用列支时间，优化集团内部交易定价。我们特别关注近年香港与内地及国际税收规则的协调，帮助企业在合规前提下，通过科学的税务规划实现税负最优化，提升企业整体盈利水平和现金流状况。</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>跨境税务规划</h3>
+                        <p>作为连接中国内地与国际市场的桥梁，香港在跨境税务规划中拥有独特优势。我们的团队精通香港签署的近40个全面性避免双重课税协定，能够为跨国企业设计高效的税务架构。我们协助客户优化集团的跨境投资路径、贸易模式和知识产权布局，合理应用转让定价策略，确保符合BEPS行动计划等国际税收规则。凭借我们与香港税务局及国际税务顾问的紧密合作，我们能够为客户提供最新的跨境税务解决方案，降低国际业务中的税务成本与合规风险。</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>个人税务顾问</h3>
+                        <p>香港作为亚太地区重要的金融中心，吸引了众多高净值人士及企业高管。我们的个人税务团队熟悉香港的税务法规及国际个人税务安排，为客户提供全方位的个人税务规划。我们的服务涵盖香港薪俸税优化、个人离岸架构设计、资产传承规划及香港投资移民税务咨询等。针对在港工作的外籍人士及内地高管，我们特别关注不同居民身份的税务影响，协助设计合理的薪酬结构和福利方案，实现个人税负的合法优化，同时确保全球税务合规。</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>税务合规服务</h3>
+                        <p>在全球税收透明度提高的背景下，香港税务合规要求日益严格。我们的税务合规团队紧跟香港税务局最新政策，为企业提供专业的税务申报与合规服务。从利得税、薪俸税到印花税申报，我们确保客户及时、准确地履行税务义务。我们定期为客户进行"税务健康检查"，评估潜在税务风险，预防税务争议。当客户面临税务局查询或税务审计时，我们提供专业支持，协助准备相关文件和解释说明，最大限度保障客户权益，降低税务风险和潜在罚款。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Business Consulting Services -->
+    <section id="consulting" class="service-section">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon">
+                    <svg class="icon-consulting-lg" viewBox="0 0 24 24">
+                        <path d="M21 6h-4V3h-2v3h-6V3H7v3H3v14h18V6zm-2 12H5V8h14v10zm-8-2h2v-2h-2v2zm-4 0h2v-2H7v2zm8 0h2v-2h-2v2z"/>
+                    </svg>
+                </div>
+                <h2>企业咨询</h2>
+                <p class="service-intro">作为立足香港、放眼全球的专业咨询团队，我们凭借对香港及大湾区商业环境的深刻理解，为本地企业及跨国公司提供全方位的战略与运营咨询服务。在香港这一东西方商业文化交汇的国际金融中心，我们的专业团队既精通国际先进管理理念，又深入了解亚洲市场特性，能够为客户提供真正本地化且国际化的解决方案。<br><br>
+                
+我们的咨询服务涵盖企业架构规划、商业计划撰写、财务管理优化及业务流程重组等核心领域，帮助企业在香港独特的商业生态中实现降本增效、合规发展和可持续增长。我们秉持"实用性与前瞻性并重"的服务理念，确保每一项咨询建议都能切实解决客户面临的实际问题，同时为企业未来发展奠定坚实基础。</p>
+            </div>
+            
+            <div class="service-content">
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>企业架构规划</h3>
+                        <p>香港作为亚洲主要的商业中心，提供了灵活多样的企业架构选择。我们的专业团队熟悉香港公司法规及各类商业实体形式，为客户设计最优的企业与法律架构。我们综合考量业务性质、行业特点、税务效益及监管要求，协助客户规划集团架构、持股结构及业务分拆方案。针对内地企业"走出去"战略和国际企业进入亚洲市场，我们特别关注香港作为区域总部和投融资平台的优势，帮助客户通过合理的企业架构规划，降低运营成本，提升管理效率和企业价值。</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>商业计划书撰写</h3>
+                        <p>在香港这个竞争激烈的商业环境中，一份专业的商业计划书对企业融资和业务拓展至关重要。我们的团队结合对香港及亚太市场的深入洞察，为客户量身定制具有说服力的商业计划书。我们从市场分析、竞争格局、财务预测到风险评估，全方位展示项目价值和商业潜力，特别强调香港独特的市场机遇和竞争优势。我们尤其擅长为初创企业、科技创新项目及跨境业务撰写商业计划书，协助客户获得天使投资、风险资本或银行贷款，加速业务增长和市场拓展。</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>财务管理优化</h3>
+                        <p>我们的财务管理优化服务以香港国际金融中心的高标准为基准，帮助企业构建健全的财务管理体系。我们的专业团队熟悉香港财务报告准则及国际会计准则，能够为客户设计符合监管要求和业务特点的财务报告框架。我们协助客户优化财务流程、实施先进的财务管理系统，建立科学的预算和成本控制机制。针对在港上市公司和跨国企业，我们特别关注财务合规性和信息透明度，通过专业培训和流程改进，提升财务团队能力，确保财务管理既满足香港监管要求，又支持企业战略决策。</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>业务流程重组</h3>
+                        <p>在香港这个效率至上的商业环境中，优化业务流程是企业保持竞争力的关键。我们的业务流程重组服务从香港企业的实际运营环境出发，结合国际最佳实践，为客户提供系统化的流程优化方案。我们运用先进的流程分析工具，识别效率瓶颈和改进机会，重新设计关键业务流程。对于在香港设立区域总部的跨国企业，我们特别关注跨境流程协调和本地化调整，确保流程既符合香港的商业文化和监管环境，又与全球标准保持一致，帮助客户实现运营效率提升和成本有效控制。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Risk Management Services -->
+    <section id="risk" class="service-section">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon">
+                    <svg class="icon-risk-lg" viewBox="0 0 24 24">
+                        <path d="M12 2L1 21h22L12 2zm0 4l7.53 13H4.47L12 6zm-1 4v4h2v-4h-2zm0 6v2h2v-2h-2z"/>
+                    </svg>
+                </div>
+                <h2>风险管理</h2>
+                <p class="service-intro">在香港这个国际金融与商业枢纽，企业面临的监管要求日益严格，风险环境愈加复杂。我们的风险管理团队结合全球最佳实践与对香港法规环境的深入理解，为各类企业提供全面的风险管控解决方案。凭借对香港证监会、金管局及其他监管机构要求的专业把握，我们能够准确识别合规风险点，并设计有效的风险防范体系。<br><br>
+                
+我们的服务范围涵盖企业风险评估、内控体系设计、合规咨询及危机管理，特别关注香港特有的监管规定和商业风险。通过系统性的风险管理框架，我们帮助客户不仅满足香港本地监管要求，也能符合国际标准，在保障业务安全的同时，提升企业治理水平，增强投资者和合作伙伴的信心。</p>
+            </div>
+            
+            <div class="service-content">
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>企业风险评估</h3>
+                        <p>在香港这个国际金融中心，企业面临的风险环境日益复杂。我们的风险评估团队采用全球领先的风险评估方法，结合对香港市场和监管环境的深入理解，为客户提供全面的风险识别和评估服务。我们系统性地分析战略、财务、运营和合规等各类风险，建立科学的风险评级体系，绘制直观的风险热图。针对香港特别行政区的监管特点和行业风险，我们为客户提供针对性的风险应对策略，帮助管理层和董事会全面了解风险状况，为战略决策和资源分配提供可靠依据。</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>内控体系设计</h3>
+                        <p>我们的内控体系设计服务以国际COSO框架为基础，结合香港特别行政区的法规要求和商业实践，为企业量身定制内部控制体系。我们的专业团队熟悉香港联交所、证监会等监管机构的内控要求，能够设计既符合监管标准又具有实操性的内控框架。我们协助客户识别关键控制点，设计有效的控制活动，编制专业的内控手册和操作指引。对于香港上市公司和受监管机构，我们特别注重内控与公司治理的整合，确保内控体系既能防范风险，又能支持业务发展和价值创造。</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>合规咨询</h3>
+                        <p>香港作为国际金融中心，拥有健全而严格的监管体系。我们的合规咨询团队精通香港各行业的法规要求，从证券、银行、保险到数据隐私与反洗钱，为客户提供全面的合规支持。我们密切关注香港监管动态，帮助客户及时识别合规风险，建立有效的合规管理体系。我们为客户提供专业的合规培训，提升员工合规意识；进行定期合规审查，确保业务运营符合监管要求。对于进入香港市场的内地企业和国际公司，我们特别关注跨境合规挑战，提供切实可行的解决方案，降低合规风险和潜在处罚。</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>危机管理</h3>
+                        <p>在香港这个信息高度透明的商业环境中，有效的危机管理对企业声誉和业务连续性至关重要。我们的危机管理团队结合国际最佳实践与香港特殊的文化和媒体环境，为客户量身定制危机预防和应对方案。我们协助客户识别潜在危机事件，制定详细的危机应对预案，建立高效的危机沟通机制。我们定期组织危机演练，提升团队应对能力；当危机发生时，我们提供专业支持，协助客户管理媒体关系，保护企业声誉。针对香港市场，我们特别关注社交媒体危机和声誉风险，帮助客户迅速有效地应对挑战并实现危机后的业务恢复。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/logo-white.png" alt="会计服务公司标志" class="footer-logo">
+                    <p>提供卓越会计与税务服务30年，为企业与个人提供全面财务解决方案。</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><img src="assets/images/icon-linkedin.svg" alt="LinkedIn"></a>
+                        <a href="#" target="_blank"><img src="assets/images/icon-wechat.svg" alt="WeChat"></a>
+                        <a href="#" target="_blank"><img src="assets/images/icon-whatsapp.svg" alt="WhatsApp"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="services.html">专业服务</a></li>
+                        <li><a href="contact.html">联络我们</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <address>
+                        <p><img src="assets/images/icon-location.svg" alt="地址"> 香港中环金融街88号国际金融中心32楼3201室</p>
+                        <p><img src="assets/images/icon-phone.svg" alt="电话"> +852 2345 6789</p>
+                        <p><img src="assets/images/icon-email.svg" alt="邮箱"> info@accountingfirm.hk</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 专业会计服务有限公司. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
